@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { Truck, Clock, ShieldCheck } from "lucide-react";
+import Image from "next/image";
+import { Clock, ShieldCheck, Truck } from "lucide-react";
 
 const Features = () => {
   const features = [
@@ -20,14 +21,14 @@ const Features = () => {
         <ShieldCheck className="text-royal-blue" size={40} strokeWidth={1.5} />
       ),
       title: "Quality Guarantee",
-      description: "We guarantee our proucts",
+      description: "We guarantee our products",
     },
   ];
 
   return (
-    <section className="w-full bg-white py-8 sm:py-12 border-b border-gray-50">
+    <section className="w-full bg-white py-8 sm:py-20 ">
       <div className="container mx-auto ">
-        <div className="flex flex-col md:flex-row items-center justify-center  gap-8 md:gap-0">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-0">
           {features.map((feature, index) => (
             <React.Fragment key={index}>
               <div className="flex w-full  items-center gap-5 px-4 lg:px-12 flex-1 md:justify-center ">

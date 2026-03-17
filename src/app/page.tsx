@@ -1,6 +1,7 @@
 import Navbar from "@/components/shared/Navbar";
 import Hero from "@/components/home/Hero";
 import Features from "@/components/home/Features";
+import PopularCategories from "@/components/home/PopularCategories";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Features />
+      <PopularCategories />
     </main>
   );
 }
